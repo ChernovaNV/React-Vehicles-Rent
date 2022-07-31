@@ -1,0 +1,51 @@
+@import "assets/scss/mixins/breakpoint";
+
+.Modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    display: none;
+    background-color: var(--base-color-400-light);
+    backdrop-filter: blur(15px);
+
+    &__container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        width: 600px;
+        padding: 65px 70px;
+
+        background-color: var(--base-color-0);
+        color: var(--base-color-300);
+        border-top-left-radius: var(--radius-largest);
+        border-bottom-left-radius: var(--radius-largest);
+    }
+}
+
+.active {
+    display: block;
+}
+
+
+@include small-tablet {
+    .Modal {
+        &__container {
+            top: auto;
+            width: 100%;
+            padding: 45px;
+        }
+    }
+}
+
+@include mobile {
+    .Modal {
+        &__container {
+            padding: 30px 15px;
+        }
+    }
+}

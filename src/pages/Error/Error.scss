@@ -1,0 +1,15 @@
+.Error {
+    flex-direction: column;
+    justify-content: center;
+    gap:  40px;
+
+    &__title {
+        color: var(--base-color-500);
+        font-size: var(--fz-largest);
+        font-weight: 700;
+        margin: 0;
+    }
+    &__text {
+        font-size: var(--small);
+    }
+}

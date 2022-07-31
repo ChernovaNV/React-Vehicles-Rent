@@ -1,0 +1,14 @@
+.RentTerms {
+    padding-left: 15px;
+      
+    &__item {
+        padding-left: 10px;
+        margin-bottom: 15px;
+
+        &::marker {
+            width: 10px;
+            height: 10px;
+            color: var(--secondary-color-400);
+        }    
+    }    
+} 

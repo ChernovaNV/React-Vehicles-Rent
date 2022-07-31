@@ -1,0 +1,32 @@
+.Features {
+    &__item {
+        gap: 15px 25px;
+    }
+
+    &__item + &__item {
+        margin-top: 15px;
+    }
+
+    &__img {
+        justify-content: center;
+        flex-shrink: 0;
+        width: 80px;
+        height: 100px;
+        background-color: var(--base-color-50);
+        border-radius: var(--radius-base); 
+
+        svg {
+            max-width: 30px;
+            height: 25px;
+            fill: var(--base-color-300);
+        }
+    }
+        
+    &__title   {
+        font-weight: 700;
+        color: var(--base-color-500)
+    }
+    &__text {
+        font-size: var(--fz-small);
+    }
+}

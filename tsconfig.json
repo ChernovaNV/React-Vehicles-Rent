@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+
+    "baseUrl": "./src",
+    "paths": {
+      "assets/*": ["assets/*"], 
+      "API/*": ["API/*"], 
+      "components": [ "components/"],
+      "models/*": ["models/*"], 
+      "pages/*": ["pages/"], 
+      "store/*": ["store/*"], 
+    },
+
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src"
+  ]
+}
