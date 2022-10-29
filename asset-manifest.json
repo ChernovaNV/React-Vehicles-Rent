@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Vehicles-Rent/static/css/main.00776a5e.css",
-    "main.js": "/React-Vehicles-Rent/static/js/main.46d60f9d.js",
+    "main.js": "/React-Vehicles-Rent/static/js/main.e568bffb.js",
     "static/media/CodecPro-Bold.woff2": "/React-Vehicles-Rent/static/media/CodecPro-Bold.ca260f1ff8099f3826ce.woff2",
     "static/media/CodecPro-Light.woff2": "/React-Vehicles-Rent/static/media/CodecPro-Light.311a5b74053b9247362e.woff2",
     "static/media/team_2.jpg": "/React-Vehicles-Rent/static/media/team_2.23244ef5f65b7149ffea.jpg",
@@ -9,10 +9,10 @@
     "static/media/team_1.jpg": "/React-Vehicles-Rent/static/media/team_1.f14fa14a089f6d2ebf33.jpg",
     "index.html": "/React-Vehicles-Rent/index.html",
     "main.00776a5e.css.map": "/React-Vehicles-Rent/static/css/main.00776a5e.css.map",
-    "main.46d60f9d.js.map": "/React-Vehicles-Rent/static/js/main.46d60f9d.js.map"
+    "main.e568bffb.js.map": "/React-Vehicles-Rent/static/js/main.e568bffb.js.map"
   },
   "entrypoints": [
     "static/css/main.00776a5e.css",
-    "static/js/main.46d60f9d.js"
+    "static/js/main.e568bffb.js"
   ]
 }
