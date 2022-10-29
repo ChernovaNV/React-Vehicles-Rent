@@ -18,7 +18,10 @@ const Error: React.FC = () => {
             <Button 
                 view={viewVar.baseMain} 
                 onClick={() =>{ 
-                    console.log('click');
+                    if(navigate(-1) === undefined) {
+                        navigate('/')
+                    }
+                    console.log(navigate(-1));
                     
                     navigate(-1)
                 }}
