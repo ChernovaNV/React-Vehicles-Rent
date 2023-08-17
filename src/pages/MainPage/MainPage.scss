@@ -1,0 +1,50 @@
+@use "app/styles/mixins";
+
+.mainPage {
+    padding: 55px 65px;
+    
+    &__header {
+        @include mixins.flex(space-between);
+        margin-bottom: 40px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: var(--fz-largest);
+        color: var(--base-color-500);
+        line-height: 1.3;
+        margin: 0;
+
+        span {
+            color: var(--main-color-400);
+        } 
+    }
+    &__right {
+        font-weight: 700;
+        font-size: var(--fz-large);
+        color: var(--main-color-400);
+        min-width: 160px;
+        text-align: right;
+    }
+    &__button {
+        margin-left: 20px;
+    }
+}
+
+@include mixins.tablet {
+    .mainPage {
+        padding: 40px;
+    }
+}
+
+@include mixins.small-tablet {
+    .mainPage {
+        padding: 25px 15px;
+
+        &__header {
+            margin-bottom: 25px;
+        }
+        &__button {
+            margin-left: 12px;
+        }
+    }
+}

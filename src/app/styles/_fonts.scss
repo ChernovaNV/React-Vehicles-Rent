@@ -1,0 +1,4 @@
+@use './mixins';
+
+@include mixins.font-face("CodecPro", "../fonts/CodecPro-Light", 300, normal);
+@include mixins.font-face("CodecPro", "../fonts/CodecPro-Bold", 700, normal); 

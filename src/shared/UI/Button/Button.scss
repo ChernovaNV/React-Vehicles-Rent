@@ -1,0 +1,63 @@
+@use "app/styles/mixins";
+
+.Button {
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    
+    &__text {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+    }
+    &__baseBgColor {
+        background-color: var(--base-color-50);
+        svg {
+            fill: var(--base-color-500);
+        } 
+    }
+    &__accentBgColor {
+        background-color: var(--main-color-400);
+    
+        svg {
+            fill: var(--base-color-0);
+        } 
+    }
+    &__smallSize {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--small-block-width);
+        height: var(--small-block-width);
+        padding: 0;
+        border-radius: var(--radius-base);
+    }
+    &__baseSize,
+    &__fullSize {
+        border-radius: var(--radius-small);
+        padding: 15px 30px;
+    
+        font-weight: 700;
+        font-size: var(--fz-base); 
+        color: var(--base-color-0);
+        text-align: center;
+    }
+    &__fullSize {
+        width: 100%;
+    
+    }
+}
+
+
+@include mixins.tablet {
+    .Button__smallSize  {
+        border-radius: calc(var(--radius-small) - 4px);
+    }
+}
+
+@include mixins.small-tablet {
+    .Button__smallSize  {
+        border-radius: calc(var(--radius-small) - 4px);
+    }
+}

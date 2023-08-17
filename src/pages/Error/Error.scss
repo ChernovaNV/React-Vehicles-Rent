@@ -1,6 +1,8 @@
+@use "app/styles/mixins";
+
 .Error {
+    @include mixins.flex(center);
     flex-direction: column;
-    justify-content: center;
     gap:  40px;
 
     &__title {

@@ -1,22 +1,24 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import './Error.scss'
-import { Button, Flex } from 'components/UI';
-import { viewVar } from 'components/UI/Button/Button';
-import { useNavigate } from 'react-router-dom';
+
+import { Button } from 'shared/UI';
+import { ButtonSize, ButtonTheme } from 'shared/UI/Button/Button';
 
 
 const Error: React.FC = () => {
     const navigate = useNavigate();
 
     return (
-        <Flex 
+        <div 
             className='container--main container--withBg Error' 
         >
             <h2 className="Error__title">Произошла ошибка</h2>
             <p className="Error__text">Пожалуйста, перезагрузите страницу</p>
             <Button 
-                view={viewVar.baseMain} 
+                theme={ButtonTheme.accent}
+                size={ButtonSize.base}
                 onClick={() =>{ 
                     if(navigate(-1) === undefined) {
                         navigate('/')
@@ -28,7 +30,7 @@ const Error: React.FC = () => {
             >
                 Перезагрузить страницу
             </Button>
-        </Flex>
+        </div>
     );
 };
 

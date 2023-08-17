@@ -1,0 +1,76 @@
+@use "app/styles/mixins";
+
+.NewProduct {
+    display: grid;
+    grid-template-rows: 75px minmax(350px, auto) repeat(3, 60px) 50px;
+    width: 100%;
+    height: calc(100vh - (var(--modal-padding-block) * 2));
+    gap: 25px;
+
+    &__header {
+        @include mixins.flex(space-between);
+        height: auto;
+    }
+    
+    &__title {
+        font-weight: 700;
+        font-size: var(--fz-larger);
+        color: var(--base-color-500);
+    }
+
+    &__input {
+        position: relative;
+    }
+
+    &__file {
+        @include mixins.flex(center);
+        width: 100%;
+        height: auto;
+        background-color: var(--base-color-50);
+        border-radius: var(--radius-large);
+    }
+
+    &__input--file{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1px;
+        height: 1px;
+        z-index: -1;
+    }
+    &__label {
+        cursor: pointer;
+        width: var(--small-block-width);
+        height: var(--small-block-width);
+        background-color: var(--base-color-0);
+        border-radius: var(--radius-base);
+        padding: 14px;
+         
+        svg {
+            fill: var(--main-color-400);
+        }
+    }
+
+    &__input--price:after {
+        content: 'руб/ч';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15px;
+    }
+
+}
+
+@include mixins.small-tablet {
+    .NewProduct {
+        gap: 15px;
+
+        &__inputs {
+            gap: 15px;
+        }
+        &__file {
+            height: 300px;
+        }
+    }
+    
+}

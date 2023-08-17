@@ -1,0 +1,45 @@
+@use "app/styles/mixins";
+
+.Card {
+    display: flex;
+    background-color: var(--base-color-0);
+    border-radius: var(--radius-large);
+    padding: 25px 30px;
+    gap: 25px;
+    cursor: pointer;
+    
+
+    &__img {
+        width: 88px;
+        height: 88px;
+        border-radius: var(--radius-base);
+    }
+    &__content {
+        @include mixins.flex(space-between, start);
+        flex-direction: column;
+        
+    }
+    &__title {
+        font-weight: 700;
+        font-size: var(--fz-base);
+        color: var(--base-color-500);
+        line-height: 1.7;
+        text-transform: capitalize;
+    }
+    &__text {
+        font-size: var(--fz-smallest);
+        color: var(--base-color-300);
+        margin-bottom: auto;
+    }
+    &__price {
+        font-weight: 700;
+        font-size: var(--fz-small);
+        color: var(--secondary-color-400); 
+    }
+}
+
+@include mixins.tablet {
+    .card {
+        padding: 20px;
+    }
+}

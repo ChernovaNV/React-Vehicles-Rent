@@ -1,0 +1,21 @@
+@use "app/styles/mixins";
+
+.CardsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+@include mixins.tablet {
+    .CardsList {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@include mixins.small-tablet {
+    .CardsList {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+}

@@ -1,0 +1,100 @@
+@use './mixins';
+
+:root {
+  // font family
+  --font-family: "CodecPro", sans-serif;
+
+  // Размер блоков
+  --container-width: 1430px;
+  --container-outwidth: 15px;
+  --header-vh: 120px;
+  --main-vh: calc(100vh - var(--header-vh) - 50px);
+  --small-block-width: 48px;
+
+  // Отступы
+  
+
+  // Рамки
+  --radius-largest: 48px;
+  --radius-large: 24px;
+  --radius-base: 16px;
+  --radius-small: 12px; 
+
+  //Размер шрифта
+  --fz-largest: 4.0rem;
+  --fz-larger: 2.4rem;
+  --fz-large: 2.0rem;
+  --fz-base: 1.6rem;
+  --fz-small: 1.4rem;
+  --fz-smallest: 1.2rem;
+
+  // Цвета
+  --main-color-100: #D1D5FF;
+  --main-color-200: #A4ACFF;
+  --main-color-300: #7682FF;
+  --main-color-400: #4959FF;
+  --main-color-500: #1B2FFF;
+  --main-color-600: #1626CC;
+  --main-color-700: #101C99;
+  --main-color-800: #0B1366;
+  --main-color-900: #050933;
+
+  --base-color-0:#FCFCFC;
+  --base-color-50: #F3F4F7;
+  --base-color-100:#CCD3DA;
+  --base-color-200:#99A7B5;
+  --base-color-300:#677B8F;
+  --base-color-400:#344f6a;
+  --base-color-500:#012345;
+  --base-color-600:#011C37;
+  --base-color-700:#011529;
+  --base-color-800:#000E1C;
+  --base-color-900:#00070E;
+
+  --secondary-color-100:#FDD2EC;
+  --secondary-color-200:#FCA5D9;
+  --secondary-color-300:#FA77C6;
+  --secondary-color-400:#F84AB3;
+  --secondary-color-500:#F71D9F;
+  --secondary-color-600:#C51780;
+  --secondary-color-700:#941160;
+  --secondary-color-800:#630C40;
+  --secondary-color-900:#310620;
+
+  --base-color-400-light:  rgba(52, 79, 106, 0.3);
+}
+
+@include mixins.tablet {
+  :root {
+    // Размер блоков
+    --header-vh: 95px;
+    --small-block-width: 40px;
+
+    // Рамки
+    --radius-largest: 36px;
+    --radius-large: 20px;
+
+    //Размер шрифта
+    --fz-largest: 3.6rem;
+    --fz-larger: 2.2rem;
+    --fz-large: 1.8rem;
+  }
+}
+
+@include mixins.small-tablet {
+  :root {
+    // Размер блоков
+    --header-vh: 70px;
+    --small-block-width: 32px;
+    --container-outwidth: 0;
+
+    // Рамки
+    --radius-largest: 24px;
+    --radius-large: 16px;
+
+    //Размер шрифта
+    --fz-largest: 2.4rem;
+    --fz-larger: 2.0rem;
+    --fz-large: 1.6rem;
+  }
+}
